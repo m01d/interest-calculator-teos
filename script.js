@@ -1,106 +1,111 @@
 const good = [
     {
         "name": "обучающий контент",
-        "example": "example",
-        "href": "#"
+        "example": "Order of Six Angles",
+        "href": "https://teosclan.boards.net/thread/206"
     },
     {
         "name": "теория заговора",
-        "example": "example",
-        "href": "#"
+        "example": "Cult of Corona",
+        "href": "https://teosclan.boards.net/thread/151"
     },
     {
         "name": "расследования",
-        "example": "example",
-        "href": "#"
+        "example": "south32.com​",
+        "href": "https://teosclan.boards.net/thread/82"
     },
     {
         "name": "творческие пространства",
-        "example": "example",
-        "href": "#"
+        "example": "Jodi",
+        "href": "https://teosclan.boards.net/thread/127"
     },
     {
         "name": "малоизвестные сайты",
-        "example": "example",
-        "href": "#"
+        "example": "Sacrifice Your Sanity",
+        "href": "https://teosclan.boards.net/thread/86"
     },
     {
         "name": "каналы / профили в соц.сетях",
-        "example": "example",
-        "href": "#"
+        "example": "Molgbq Mxpbkzlobjloq",
+        "href": "https://teosclan.boards.net/thread/202"
     },
     {
         "name": "документы / архивы",
-        "example": "example",
-        "href": "#"
+        "example": "research",
+        "href": "https://teosclan.boards.net/thread/197"
     },
     {
         "name": "IP-адреса",
-        "example": "example",
-        "href": "#"
+        "example": "TCP/IP (scan.)",
+        "href": "https://teosclan.boards.net/thread/170"
     },
     {
         "name": "сети",
-        "example": "example",
-        "href": "#"
+        "example": "Dread",
+        "href": "https://teosclan.boards.net/thread/169"
     },
     {
         "name": "ARG",
-        "example": "example",
-        "href": "#"
+        "example": "JumpPoint",
+        "href": "https://teosclan.boards.net/thread/49"
     },
     {
         "name": "репозитории",
-        "example": "example",
-        "href": "#"
+        "example": "https://teosclan.boards.net/thread/225",
+        "href": "youtube-dl"
     },
 ]
 
 const bad = [
     {
         "name": "крипипасты",
-        "example": "example",
-        "href": "#"
+        "example": "Джефф Убийца",
+        "href": "https://creepypasta-biographies.fandom.com/wiki/Jeff_the_Killer"
     },
     {
         "name": "файлы смерти",
-        "example": "example",
+        "example": "Ben.mp3",
+        "href": "https://mrakopedia.net/wiki/Ben.mp3"
+    },
+    {
+        "name": "шок-контент",
+        "example": "сайты || каналы с видеозаписями насилия, сэлфхарма, смертями",
         "href": "#"
     },
     {
-        "name": "треш-контент",
-        "example": "example",
+        "name": "порнография",
+        "example": "сайты || каналы с порнографией",
         "href": "#"
     },
     {
-        "name": "псевдонаука",
-        "example": "example",
+        "name": "нелегальщина",
+        "example": "сайты || каналы по продаже нелегальных товаров",
         "href": "#"
     },
     {
         "name": "компьютерные игры",
-        "example": "example",
-        "href": "#"
+        "example": "No Players Online",
+        "href": "https://papercookies.itch.io/no-players-online"
     },
     {
         "name": "семейные архивы",
-        "example": "example",
-        "href": "#"
+        "example": "Sladkiy_lomtick",
+        "href": "https://t.me/sladkiy_lomtick"
     },
     {
         "name": "маленькие проекты",
-        "example": "example",
-        "href": "#"
+        "example": "Unchartedfabrications",
+        "href": "https://reddit.com/r/ARG/comments/vkl9bb/i_make_arg_style_puzzles_heres_the_third_and/"
     },
     {
         "name": "устаревшие проекты",
-        "example": "example",
-        "href": "#"
+        "example": "Junko Junsui",
+        "href": "https://teosclan.boards.net/thread/98"
     },
     {
         "name": "«не о чем»",
-        "example": "example",
-        "href": "#"
+        "example": "Amorphous",
+        "href": "http://amorph7hyofdtnfkgtu2vfe6obipy3ipij72qsic2rw5gsq37wicmyyd.onion/"
     },
 ]
 
@@ -141,7 +146,7 @@ calculateButton.addEventListener("click", () => {
         }
     });
 
-    console.log('Количество выбранных чекбоксов из категории "Интересные параметры": ' + interestingCount);
+    console.log('Количество выбранных категорий из "Интересные параметры": ' + interestingCount);
     console.log('Количество выбранных категорий из "Неинтересные параметры": ' + uninterestingCount);
     const result = document.getElementById("result");
     result.textContent = "Итог: " + (interestingCount - uninterestingCount);
