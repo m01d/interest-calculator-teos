@@ -5,7 +5,7 @@ const good = [
         "href": "https://teosclan.boards.net/thread/206"
     },
     {
-        "name": "теория заговора",
+        "name": "культы / теории заговора",
         "example": "Cult of Corona",
         "href": "https://teosclan.boards.net/thread/151"
     },
@@ -40,20 +40,45 @@ const good = [
         "href": "https://teosclan.boards.net/thread/170"
     },
     {
-        "name": "сети",
+        "name": "скрытые сети",
         "example": "Dread",
         "href": "https://teosclan.boards.net/thread/169"
     },
     {
-        "name": "ARG",
+        "name": "ARG/веб-сериал",
         "example": "JumpPoint",
         "href": "https://teosclan.boards.net/thread/49"
     },
     {
         "name": "репозитории",
-        "example": "https://teosclan.boards.net/thread/225",
-        "href": "youtube-dl"
+        "example": "youtube-dl",
+        "href": "https://teosclan.boards.net/thread/225"
     },
+    {
+        name: "нетсталкинг",
+        example: "Горизонт Событий",
+        href: "https://teosclan.boards.net/thread/62/"
+    },
+    {
+        name: "правительственные программы",
+        example: "AATIP / UAPTF",
+        href: "https://teosclan.boards.net/thread/176",
+    },
+    {
+        name: "геолокационный поиск",
+        example: "Mysterious Nashville",
+        href: "https://teosclan.boards.net/thread/64/",
+    },
+    {
+        name: "криптография / криптоголоволомки",
+        example: "Dark Horse​",
+        href: "https://teosclan.boards.net/thread/60",
+    },
+    {
+        name: "анти-наука",
+        example: "Forgotten Languages​",
+        href: "https://teosclan.boards.net/thread/144",
+    }
 ]
 
 const bad = [
@@ -131,7 +156,8 @@ render(good, "good");
 render(bad, "bad");
 
 const calculateButton = document.getElementById("calculate");
-calculateButton.addEventListener("click", () => {
+calculateButton.addEventListener("click", (event) => {
+    event.preventDefault();
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
     let interestingCount = 0;
     let uninterestingCount = 0;
@@ -150,4 +176,12 @@ calculateButton.addEventListener("click", () => {
     console.log('Количество выбранных категорий из "Неинтересные параметры": ' + uninterestingCount);
     const result = document.getElementById("result");
     result.textContent = "Итог: " + (interestingCount - uninterestingCount);
+});
+
+const resetButton = document.getElementById("reset");
+resetButton.addEventListener("click", (event) => {
+    const result = document.getElementById("result");
+    result.textContent = "Итог: ";
+    const optionsForm = document.getElementById("optionsForm");
+    optionsForm.reset();
 });
