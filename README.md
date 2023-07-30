@@ -13,4 +13,3 @@ git clone https://github.com/iaah04/interest-calculator-teos.git .
 ## Usage
 
 Just [open](https://iaah04.github.io/interest-calculator-teos/) :)
-
