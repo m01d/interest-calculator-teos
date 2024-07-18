@@ -5,7 +5,7 @@ The simple way to understand what we are interested in and what we're not really
 ## Installation
 
 ```
-git clone 
+git clone git@github.com:m01d/interest-calculator-teos.git
 ```
 
 ## Usage
